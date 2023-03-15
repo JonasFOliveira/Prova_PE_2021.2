@@ -220,7 +220,7 @@ void plot_hist(int *notas, int n, int axis){
             }
         }
         
-        for (int i = 11-(11-valor_maximo(freq, 11)), j; i >= 0; i--){
+        for (int i = valor_maximo(freq, 11), j; i >= 0; i--){
             printf("\t");
             for (j = 0; j < 11; j++){
                 if(hist[j][i])
